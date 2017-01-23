@@ -1,0 +1,25 @@
+alias vi=vim
+alias cls=clear
+
+alias vin="vi /usr/local/etc/nginx/nginx.conf"
+
+alias ip="ifconfig | grep 'inet ' | grep -v 127.0.0.1"
+
+# git
+alias gipull="git pull --rebase"
+alias gipush="git push"
+alias girl="git reflog"
+alias gil="git log | tig"
+alias gis="git status"
+alias gish="git stash"
+alias gia="git add"
+alias gib="git branch"
+alias gic="git commit"
+alias gich="git checkout"
+alias gim="git mergetool"
+alias gid="git difftool"
+alias gih="git flow hotfix"
+alias gif="git flow feature"
+alias gir="git flow release"
+alias gire="git reset"
+alias girm="git rm"
