@@ -42,6 +42,8 @@ Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
 Plugin 'mhartington/vim-angular2-snippets'
 
+Plugin 'editorconfig/editorconfig-vim'
+
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo

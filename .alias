@@ -23,3 +23,5 @@ alias gif="git flow feature"
 alias gir="git flow release"
 alias gire="git reset"
 alias girm="git rm"
+
+alias aliyun=aliyuncli
