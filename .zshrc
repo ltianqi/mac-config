@@ -1,11 +1,11 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/shiniaogeshi1/.oh-my-zsh
+export ZSH=~/.oh-my-zsh
 
 export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass
 
 export ANDROID_HOME=~/Library/Android/sdk
 #export ANDROID_NDK=/Users/shiniaogeshi1/Library/Android/sdk/ndk-bundle
-export ANDROID_NDK=/Users/shiniaogeshi1/Library/Android/android-ndk-r10e
+export ANDROID_NDK=~/Library/Android/android-ndk-r10e
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/

@@ -20,6 +20,8 @@ Plugin 'garbas/vim-snipmate'
 Plugin 'https://github.com/bentayloruk/vim-react-es6-snippets.git'
 Plugin 'mxw/vim-jsx'
 
+Plugin 'posva/vim-vue'
+
 Plugin 'vim-scripts/Emmet.vim'
 Plugin 'vim-scripts/WebAPI.vim'
 
@@ -40,7 +42,6 @@ Plugin 'Shougo/neocomplete'
 
 Plugin 'Shougo/neosnippet'
 Plugin 'Shougo/neosnippet-snippets'
-Plugin 'mhartington/vim-angular2-snippets'
 
 Plugin 'editorconfig/editorconfig-vim'
 
@@ -75,8 +76,6 @@ filetype plugin indent on    " required
 " see :h vundle for more details or wiki for FAQ
 " Put your non-Plugin stuff after this line
 
-syntax on
-
 set clipboard=unnamed
 set showtabline=2
 set tabline+=%F
@@ -108,11 +107,13 @@ set smartindent             " 开启新行时使用智能自动缩进
 " set listchars=tab:>-,trail:- 
 
 set background=dark
+colorscheme solarized
+
 
 " solarized options 
+let g:solarized_termcolors=256
 let g:solarized_visibility = "high"
 let g:solarized_contrast = "high"
-colorscheme solarized
 let g:molokai_original = 1
 let g:rehash256 = 1
 "colorscheme molokai
@@ -139,13 +140,10 @@ let g:gitgutter_avoid_cmd_prompt_on_windows=0
 " ctrlp
 let g:ctrlp_map = ',,'
 let g:ctrlp_open_multiple_files = 'v'
+let g:ctrlp_custom_ignore = '\v[\/](node_modules|target|dist|data)|(\.(swp|ico|git|svn))$'
+
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|node_modules)$',
-  \ 'file': '\v\.(log|jpg|png|jpeg)$',
-  \ }
-
 
 " ng2
 " Enable snipMate compatibility feature.
@@ -169,3 +167,5 @@ smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
 if has('conceal')
   set conceallevel=2 concealcursor=niv
 endif
+
+syntax enable
