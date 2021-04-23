@@ -1,6 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=~/.oh-my-zsh
 
+export JAVA_HOME=$(/usr/libexec/java_home -v 15)
 export SASS_BINARY_SITE=https://npm.taobao.org/mirrors/node-sass
 
 export ANDROID_HOME=~/Library/Android/sdk
@@ -55,7 +56,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git gitfast)
 #plugins=(git vi-mode)
 
 # User configuration
@@ -67,6 +68,7 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:/usr/local/mysql/bin
 export PATH=${PATH}:/usr/local/go/bin
+export PATH=${PATH}:/Users/apple/Library/apache-maven-3.6.3/bin
 
 source $ZSH/oh-my-zsh.sh
 source ~/.alias

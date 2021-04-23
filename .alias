@@ -25,3 +25,5 @@ alias gire="git reset"
 alias girm="git rm"
 
 alias aliyun=aliyuncli
+
+alias atom="atom ."
