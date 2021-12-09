@@ -4,6 +4,8 @@ alias cls=clear
 alias vin="vi /usr/local/etc/nginx/nginx.conf"
 
 alias ip="ifconfig | grep 'inet ' | grep -v 127.0.0.1"
+alias podi="arch -x86_64 pod install"
+alias pod="arch -x86_64 pod"
 
 # git
 alias gipull="git pull --rebase"
@@ -27,3 +29,5 @@ alias girm="git rm"
 alias aliyun=aliyuncli
 
 alias atom="atom ."
+
+alias rexcode="sudo pkill usbmuxd"
